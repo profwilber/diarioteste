@@ -28,7 +28,7 @@ header{background:#fff9;backdrop-filter:blur(12px);border-bottom:1px solid var(-
 <div id="modal" class="modal"><div class="dialog"><h2 id="modalTitle">Nova anotação</h2><div class="field"><label>Título</label><input id="title" maxlength="100" placeholder="Ex.: O que aprendi hoje"></div><div class="field"><label>O que aprendi?</label><textarea id="learned" placeholder="Conte o que você aprendeu..."></textarea></div><div class="field"><label>Descobertas e ideias</label><textarea id="discoveries" placeholder="O que chamou sua atenção?"></textarea></div><div class="field"><label>Dificuldades ou dúvidas</label><textarea id="difficulties" placeholder="O que ainda precisa compreender melhor?"></textarea></div><div class="dialogActions"><button id="cancelBtn" class="secondary">Cancelar</button><button id="saveBtn" class="primary">Salvar no Drive</button></div><div id="modalStatus" class="status"></div></div></div>
 <script>
 // CONFIGURAÇÃO: substitua pelo Client ID do seu projeto no Google Cloud.
-const GOOGLE_CLIENT_ID = 'COLE_SEU_CLIENT_ID_AQUI.apps.googleusercontent.com';
+const GOOGLE_CLIENT_ID = '127229528443-loo9v2cq24qrr1edlesjvles8kce60bs.apps.googleusercontent.com';
 const SCOPES = 'https://www.googleapis.com/auth/drive.appdata https://www.googleapis.com/auth/userinfo.profile';
 const FILE_NAME = 'diario_aprendizagem.json';
 let tokenClient, accessToken='', fileId=null, data={version:1,notes:[]}, editingId=null;
